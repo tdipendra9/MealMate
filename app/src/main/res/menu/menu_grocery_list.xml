@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="Share List"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_delegate"
+        android:icon="@android:drawable/ic_menu_send"
+        android:title="Delegate List"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Sort"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/sort_category"
+                android:title="By Category"
+                android:checkable="true"
+                android:checked="true" />
+            <item
+                android:id="@+id/sort_name"
+                android:title="By Name"
+                android:checkable="true" />
+            <item
+                android:id="@+id/sort_price"
+                android:title="By Price"
+                android:checkable="true" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_clear_completed"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="Clear Purchased Items"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_export"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="Export List"
+        app:showAsAction="never" />
+</menu> 

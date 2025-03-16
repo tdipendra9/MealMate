@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item
+        android:id="@+id/action_delegate"
+        android:icon="@android:drawable/ic_menu_send"
+        android:title="Delegate Selected"
+        app:showAsAction="ifRoom" />
+    
+    <item
+        android:id="@+id/action_share"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="Share List"
+        app:showAsAction="ifRoom" />
+    
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@android:drawable/ic_menu_rotate"
+        android:title="Refresh"
+        app:showAsAction="ifRoom" />
+    
+    <item
+        android:id="@+id/action_filter"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Filter"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/filter_all"
+                android:title="All Items"
+                android:checkable="true"
+                android:checked="true" />
+            <item
+                android:id="@+id/filter_purchased"
+                android:title="Purchased Items"
+                android:checkable="true" />
+            <item
+                android:id="@+id/filter_not_purchased"
+                android:title="Not Purchased Items"
+                android:checkable="true" />
+        </menu>
+    </item>
+    
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Sort"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/sort_category"
+                android:title="By Category"
+                android:checkable="true"
+                android:checked="true" />
+            <item
+                android:id="@+id/sort_name"
+                android:title="By Name"
+                android:checkable="true" />
+            <item
+                android:id="@+id/sort_price"
+                android:title="By Price"
+                android:checkable="true" />
+        </menu>
+    </item>
+    
+    <item
+        android:id="@+id/action_select_all"
+        android:title="Select All"
+        app:showAsAction="never" />
+    
+    <item
+        android:id="@+id/action_deselect_all"
+        android:title="Deselect All"
+        app:showAsAction="never" />
+</menu> 

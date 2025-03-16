@@ -1,0 +1,111 @@
+plugins {
+    alias(libs.plugins.android.application)
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'edu.ismt.dipendra.mealmate'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "edu.ismt.dipendra.mealmate"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+    
+    // Add this configuration to handle AAR metadata compatibility issues
+    configurations.all {
+        resolutionStrategy {
+            force 'androidx.core:core-ktx:1.13.0'
+            force 'androidx.appcompat:appcompat:1.7.0'
+            force 'com.google.android.material:material:1.12.0'
+            force 'com.google.android.gms:play-services-basement:18.3.0'
+            force 'com.google.android.gms:play-services-base:18.2.0'
+            force 'com.google.android.gms:play-services-tasks:18.1.0'
+            force 'androidx.activity:activity:1.8.2'
+            
+            // Force a specific version of firebase-common to resolve conflicts
+            force 'com.google.firebase:firebase-common:20.4.2'
+        }
+    }
+    
+    // Handle duplicate classes more specifically
+    configurations {
+        // Exclude the Timestamp class from firebase-firestore
+        implementation.exclude module: 'firebase-common-ktx'
+    }
+}
+
+dependencies {
+    // AndroidX dependencies
+    implementation libs.appcompat
+    implementation libs.material
+    implementation 'androidx.activity:activity:1.8.2'
+    implementation libs.constraintlayout
+    
+    // Firebase dependencies - use the BOM to manage versions
+    implementation platform('com.google.firebase:firebase-bom:32.7.4')
+    
+    // Declare Firebase dependencies without versions
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-auth'
+    
+    // Add specific exclusion for firebase-firestore
+    implementation('com.google.firebase:firebase-firestore') {
+        exclude group: 'com.google.firebase', module: 'firebase-common'
+    }
+    
+    implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.google.firebase:firebase-database'
+    
+    // Explicitly include firebase-common to ensure consistent version
+    implementation 'com.google.firebase:firebase-common:20.4.2'
+    
+    // Glide for image loading
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+    
+    // Google Play Services dependencies with consistent versions
+    implementation 'com.google.android.gms:play-services-base:18.2.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.android.gms:play-services-auth:20.6.0'
+    
+    // JSoup for HTML parsing (recipe import feature)
+    implementation 'org.jsoup:jsoup:1.17.2'
+    
+    // Testing dependencies
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    // Gson dependency
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    // Add CircleImageView library
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+}

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "487024788828",
+    "firebase_url": "https://mealmate-fd1c1-default-rtdb.firebaseio.com",
+    "project_id": "mealmate-fd1c1",
+    "storage_bucket": "mealmate-fd1c1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487024788828:android:b936d321f21df8e0906d99",
+        "android_client_info": {
+          "package_name": "edu.ismt.dipendra.mealmate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOI5yoPvkKqZdCyPw7doalgjOFzqmuex4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

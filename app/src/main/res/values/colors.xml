@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base colors -->
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="colorPrimaryLight">#C8E6C9</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="colorAccentLight">#FFCCBC</color>
+    <color name="colorSecondary">#2196F3</color>
+    <color name="colorSecondaryLight">#BBDEFB</color>
+    <color name="colorTertiary">#9C27B0</color>
+    <color name="colorTertiaryLight">#E1BEE7</color>
+    <color name="colorQuaternary">#FF9800</color>
+    <color name="colorQuaternaryLight">#FFE0B2</color>
+    
+    <!-- Missing colors causing errors -->
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorCardBackground">#FFFFFF</color>
+    <color name="colorCardStroke">#E0E0E0</color>
+    <color name="colorTextPrimary">@color/textPrimary</color>
+    <color name="colorTextSecondary">@color/textSecondary</color>
+    <color name="colorButtonNormal">#EEEEEE</color>
+    <color name="colorDelete">#F44336</color>
+    
+    <!-- Text colors -->
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+    <color name="textHint">#BDBDBD</color>
+    
+    <!-- Common colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#EEEEEE</color>
+    <color name="lightGray">#F5F5F5</color>
+    <color name="darkGray">#757575</color>
+    
+    <!-- Status colors -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FFC107</color>
+    <color name="error">#F44336</color>
+    <color name="info">#2196F3</color>
+    
+    <!-- Bottom navigation colors -->
+    <color name="bottom_nav_color">@color/colorPrimary</color>
+    <color name="bottom_nav_selected">@color/colorPrimary</color>
+    <color name="bottom_nav_unselected">@color/darkGray</color>
+    
+    <!-- Card background colors -->
+    <color name="cardBreakfast">#FF9800</color>
+    <color name="cardLunch">#2196F3</color>
+    <color name="cardDinner">#9C27B0</color>
+    <color name="cardSnack">#4CAF50</color>
+    
+    <!-- Nutrition colors -->
+    <color name="nutritionProtein">#F44336</color>
+    <color name="nutritionCarbs">#2196F3</color>
+    <color name="nutritionFat">#FFC107</color>
+    <color name="nutritionCalories">#4CAF50</color>
+    
+    <!-- Grocery List Colors -->
+    <color name="purchased_item_bg">#F5F5F5</color>
+</resources>

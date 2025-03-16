@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark theme colors -->
+    <color name="darkBackground">#121212</color>
+    <color name="darkCardBackground">#1E1E1E</color>
+    <color name="darkTextPrimary">#FFFFFF</color>
+    <color name="darkTextSecondary">#B3FFFFFF</color> <!-- 70% white -->
+    
+    <!-- Override common colors for dark theme -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#424242</color>
+    <color name="lightGray">#616161</color>
+    <color name="darkGray">#9E9E9E</color>
+    
+    <!-- Override card background colors for better visibility -->
+    <color name="colorBackground">#121212</color>
+    <color name="colorCardBackground">#1E1E1E</color>
+    <color name="colorCardStroke">#424242</color>
+    
+    <!-- Text colors for dark theme -->
+    <color name="textPrimary">#FFFFFF</color>
+    <color name="textSecondary">#B3FFFFFF</color>
+    <color name="textHint">#80FFFFFF</color> <!-- 50% white -->
+    
+    <!-- Bottom navigation colors for dark theme -->
+    <color name="bottom_nav_unselected">#B3FFFFFF</color> <!-- 70% white -->
+    
+    <!-- Grocery List Colors for dark theme -->
+    <color name="purchased_item_bg">#2D2D2D</color>
+</resources> 

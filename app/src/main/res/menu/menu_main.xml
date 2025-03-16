@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_reminders"
+        android:title="@string/meal_reminders"
+        android:icon="@android:drawable/ic_popup_reminder"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_import_recipe"
+        android:title="@string/import_recipe"
+        android:icon="@android:drawable/ic_menu_upload"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_test_google_play"
+        android:title="@string/test_google_play_services"
+        android:icon="@android:drawable/ic_menu_help"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_logout"
+        android:title="@string/logout"
+        android:icon="@android:drawable/ic_lock_power_off"
+        app:showAsAction="ifRoom" />
+</menu> 
