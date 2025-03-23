@@ -18,7 +18,7 @@ import edu.ismt.dipendra.mealmate.R;
 import edu.ismt.dipendra.mealmate.utils.GooglePlayServicesHelper;
 
 /**
- * Test activity to verify Google Play Services integration
+ * Test activity to verify Google Play Services integration hello
  */
 public class GooglePlayServicesTestActivity extends AppCompatActivity {
 
